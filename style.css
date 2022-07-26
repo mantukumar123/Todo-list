@@ -1,0 +1,184 @@
+/* Basic Style */
+
+body {
+	color: rgb(255, 0, 0);
+	font-family: Lato, sans-serif;
+	background-color:#48c1f5;
+}
+
+.container {
+	display: block;
+	width: 100%;
+	margin: 10px auto 100px;
+	background-color:rgb(155, 244, 239);
+	margin: auto;
+    padding-bottom: 10px;
+    border: 1px solid rgb(255, 236, 167);
+    box-shadow: #ddd;
+	border-radius:10px
+}
+
+
+
+h2 {
+	text-align:center;
+	margin: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+    color: rgb(168, 46, 180);
+}
+
+li * {
+	float: left;
+}
+
+li,
+h3 {
+	clear: both;
+	list-style: none;
+    margin: 10px;
+}
+
+input,
+button {
+	outline: none;
+}
+
+button {
+	background: none;
+	border: 0px;
+	color: #888;
+	font-size: 15px;
+	width: 60px;
+	margin: 10px 0 0;
+	font-family: Lato, sans-serif;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #333;
+}
+
+
+/* Heading */
+
+h3,
+label[for='new-task'] {
+	color: #1274bb;
+	font-weight: 700;
+	font-size: 18px;
+	border-bottom: 2px solid rgb(32, 166, 99);
+	padding: 20px 0 10px;
+	margin: 10;
+	text-transform: capitalize;
+}
+
+input[type="text"] {
+	margin: 10;
+	font-size: 18px;
+	line-height: 18px;
+	height: 18px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 6px;
+	font-family: Lato, sans-serif;
+	color: #888;
+}
+
+input[type="text"]:focus {
+	color: #333;
+}
+
+
+/* New Task */
+
+label[for='new-task'] {
+	display: block;
+	margin: 20 0 30px;
+}
+
+input#new-task {
+	/* float: left; */
+	width: 80%;
+    margin: 10px;
+    justify-content: center;
+}
+
+p > button:hover {
+	color: #0FC57C;
+}
+
+
+/* Task list */
+
+li {
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+li > input[type="checkbox"] {
+	margin: 0 10px;
+	position: relative;
+	top: 15px;
+}
+
+li > label {
+	font-size: 18px;
+	line-height: 40px;
+	width: 237px;
+	padding: 0 0 0 11px;
+}
+
+li > input[type="text"] {
+	width: 226px;
+}
+
+li > .delete:hover {
+	color: #CF2323;
+}
+
+
+/* Completed */
+
+#completed-tasks label {
+	text-decoration: line-through;
+	color: #888;
+}
+
+
+/* Edit Task */
+
+ul li input[type=text] {
+	display: none;
+}
+
+ul li.editMode input[type=text] {
+	display: block;
+}
+
+ul li.editMode label {
+	display: none;
+}
+
+.float-right{
+    float: right;
+    margin-right: 1rem;
+    justify-content: center;
+    border: 1px solid greenyellow;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* padding: 0.2rem; */
+    border-radius: 2em;
+    color: white;
+    background: #48c1f5;
+}
+
+.add-box{
+    border: 4px solid rgb(238, 177, 177);
+    border-radius: 10px;
+}
